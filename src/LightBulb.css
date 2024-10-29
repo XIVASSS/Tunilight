@@ -1,0 +1,49 @@
+/* src/LightBulb.css */
+.light-bulb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Enable positioning for the button */
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .bulb-rope {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    justify-content: center; /* Center rows vertically */
+    align-items: center; /* Center rows horizontally */
+    width: 100%; /* Full width */
+    padding: 20px 0; /* Padding around the rope */
+  }
+  
+  .bulb-row {
+    display: flex; /* Use flexbox to arrange bulbs in a row */
+    justify-content: center; /* Center bulbs horizontally */
+    width: 100%; /* Full width */
+    margin: 5px 0; /* Margin between rows */
+  }
+  
+  .light-bulb {
+    width: 40px; /* Set width for bulbs */
+    height: 40px; /* Set height for bulbs */
+    border-radius: 50%; /* Make it circular */
+    transition: background-color 0.3s; /* Smooth transition for color change */
+    border: 2px solid #000; /* Optional: Add a border for visibility */
+  }
+  
+  .switch-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4b0082; /* Indigo button */
+    color: white;
+    margin-top: 20px; /* Space from the bulb rope */
+    transition: background-color 0.3s;
+  }
+  
+  .switch-button:hover {
+    background-color: #3e0f70; /* Darker shade on hover */
+  }
+  
